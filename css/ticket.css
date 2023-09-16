@@ -44,12 +44,12 @@
     width: 50%;
     font-family: "Bebas Neue", sans-serif;
     font-size: 5em;
+    text-transform: uppercase;
     font-weight: 700;
     line-height: 114px;
     letter-spacing: 0.025em;
     text-align: left;
     margin: 0 0 0 0;
-    text-transform: uppercase;
 }
 
 form {

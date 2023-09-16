@@ -6,6 +6,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     z-index: 9999;
+    
 }
 
 .container-img {
@@ -67,7 +68,7 @@ body {
     }
   }
   
-  .container-img:hover {
+body:hover {
     -webkit-animation: swing 0.6s ease;
     animation: swing 0.6s ease;
      -webkit-animation-iteration-count: 1;
@@ -92,12 +93,6 @@ body .one::before {
     left: -100%;
 }
 
-
-.one {
-    position: absolute;
-    opacity: 0;
-}
-
 body .one::after    {
     left: 100%;
 }
@@ -106,38 +101,33 @@ body::before,
 body .one::before {
     z-index: 999;
     background-image: url("../img/fog-1.png");
-    animation: fogmove 5s linear 0s infinite;
+    animation: fogmove 5s linear 0s 2;
     height: 200%;
 }
 body::after, 
 body .one::after {
     z-index: 999;
     background-image: url("../img/fog-2.png");
-    animation: one 5s linear 0s infinite;
+    animation: one 5s linear 0s 2;
     height: 200%;
 }
 @keyframes fogmove {
     from {
         transform: translate3d(0%, 0, 0);
-        opacity: 1;
     }
     to {
         transform: translate3d(-100%, 0, 0);
-        opacity: 0;
     }
 }
 
 @keyframes one {
     from {
-        transform: translate3d(100%, 0, 0);
-    }
-    to {
         transform: translate3d(0%, 0, 0);
     }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
 }
-
-
-
 
 header {
     width: 100%;
@@ -208,4 +198,3 @@ z-index: 999;
     border: none;
     z-index: 999;
 }
-
