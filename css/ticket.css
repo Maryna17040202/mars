@@ -1,0 +1,130 @@
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color:#F2E1C2;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    margin-top: 150px;
+    right: 135px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.container-ticket {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 120px;
+    align-items: center;
+}
+
+.container-title {
+    width: 80%;
+}
+
+.container-title h1 {
+    width: 50%;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 114px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    margin: 0 0 0 0;
+}
+
+form {
+    width: 100%;
+}
+
+.containet-data-human {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.arrival-date, 
+.date-of-departure,
+.quantity {
+    width: 27%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.arrival-date span, 
+.date-of-departure span,
+.quantity span {
+    margin-top: 20px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.arrival-date input, 
+.date-of-departure input,
+.quantity input {
+    width: 100%;
+    background-color: #F2E1C2;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 15px;
+    outline: none;
+}
+
+.submit-input {
+    width: 92%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+}
+
+.submit-input input {
+    width: 30%;
+    height: 3% ;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    background: #262526;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: #F2E1C2;
+    border: none;
+}
+
+.submit-input input:hover {
+    background-color: #F23207;
+}

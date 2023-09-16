@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ticket.css">
+</head>
+<body>
+
+    <div class="container-img">
+        <img src="img/Фон.jpg" alt="">
+    </div>
+
+    <div class="one">
+        <img src="img/image 4.png" alt="">
+    </div>
+    
+   
+
+    <header>
+            
+            <div class="container-header">
+
+                <div class="logo">
+                    <img src="img/Mars.png" alt="">
+                </div>
+    
+                
+                   
+                <div class="container-nav">
+                    <a href="#">О марсе</a>
+                    <a href="#">Процесс</a>
+                    <a id="openBtn" href="#">Билеты</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Контакты</a>
+                    <button>
+                        Купить билеты
+                    </button>
+                </div> 
+            </div>
+            
+    </header>
+
+    <main>
+        <div class="container-main">
+            <div class="main-img">
+                <div class="container-dot-one">
+                    <div class="dot-one"></div>
+
+                </div>
+                <div class="container-line">
+                    <div class="line"></div>
+                </div>
+                <div class="container-dot-two">
+                    <div class="dot-two"></div>
+                </div>
+                
+            </div>
+
+
+            <div class="main-title">
+                <h1>
+                    Точка назначения:
+                </h1>
+            </div>
+
+            <div class="banner">
+                <video src="video/Mars.m4v" autoplay muted loop></video>
+                <h1>МАРС</h1>
+            </div>
+            
+        </div>
+
+        
+
+        <div id="myNav" class="overlay">
+            <img id="myNavClose"  class="closebtn" src="img/frame-5.png" alt="">
+                <div class="container-ticket">
+                    <div class="container-title">
+                        <h1>
+                            Бронирование билетов
+                        </h1>
+                    </div>
+
+                    
+                    <form action="">
+                        <div class="containet-data-human">
+                            <div class="arrival-date">
+                                <span>Дата заезда</span>
+                                <input type="text" name="" id="dateBron" required>
+                            </div>
+                            <div class="date-of-departure">
+                                <span>Дата выезда</span>
+                                <input type="text" name="" id="dateDeparture" required>
+                            </div>
+                            <div class="quantity" >
+                                <span>Количество</span>
+                                <input type="text" name="" id="human" value="1 человек" required>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="submit-input">
+                            <input id="submit" type="submit" value="Купить сейчас">
+                        </div>
+                    </form>
+                   
+              
+            </div>
+          </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
